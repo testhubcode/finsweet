@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+@import url(header.css);
+@import url(common.css);
+@import url(color.css);
+@import url(responsive.css);
+@import url(footer.css);
+
+:root {
+
+    /* Body Style*/
+    --body-color: #161722;
+    --body-light-color: #ffffff;
+    --body-line-height: 24px;
+    --body-size: 16px;
+    --text-transform: uppercase;
+    --primary-color: #FFD2A4;
+    --primary-light: #FFF5EB;
+    --body-font: 'Roboto Condensed';
+
+
+
+    /* HX Style */
+    --h1-size: 64px;
+    --h1-line-height: 82px;
+    --h2-size: 48px;
+    --h2-line-height: 64px;
+    --h3-size: 40px;
+    --h3-line-height: 56px;
+    --h4-size: 32px;
+    --h4-line-height: 44px;
+    --h5-size: 24px;
+    --h5-line-height: 28px;
+    --h6-size: 16px;
+    --h6-line-height: 150%;
+    --hx-font-weight: bold;
+    --hx-text-transform: uppercase;
+    --hx-letter-spacing: -0.01em;
+
+
+    /* Btn  Style*/
+    --primary-bg: #FFD2A4;
+    --primary-bg-hover: #F2C79B;
+    --primary-color: #1C1D28;
+    --primary-padding-y: 24px;
+    --primary-padding-X: 64px;
+    --secondary-bg: #161722;
+    --secondary-bg-hover: #161722;
+    --secondary-color: #FFD2A4;
+    --secondary-color-hover: #FFFFFF;
+    --nav-btn-padding-y: 20px;
+    --nav-btn-padding-x: 48px;
+    --btn-radius: 12px;
+
+}
+
+/* Start of Hero Style Code */
+
+.hero {
+    margin-top: 79px;
+    margin-bottom: 49px;
+    background: url(../img/home-hero.svg);
+    background-size: cover;
+    background-position: right;
+    height: 100%;
+    margin-left: 131px;
+    padding: 128px 0 128px 110px;
+}
+
+.hero__title {
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    color: white;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-bottom: 64px;
+}
+
+.hero__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.hero__bottom-text {
+    color: white;
+}
+
+.line {
+    width: 18px;
+    height: 0px;
+    border: 1px solid #FFD2A4;
+    transform: rotate(-180deg);
+    margin-right: 12px;
+}
+
+/* End of Hero Style Code */
+
+
+
+
+/* Start of We Do Style Code */
+
+.we-do {
+    margin-top: 49px;
+    margin-bottom: 128px;
+}
+
+.section__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__subtext {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: var(--text-transform);
+}
+
+.section__heading h2 {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.item {
+    padding: 80px;
+    background: var(--primary-light);
+    width: calc(100% / 3);
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    position: relative;
+}
+
+.item:first-of-type {
+    margin-left: 0;
+}
+
+.item:last-of-type {
+    margin-right: 0;
+}
+
+.item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: var(--primary-bg);
+}
+
+.item .shape {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-bg);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.item .h4 {
+    margin-bottom: 8px;
+}
+
+
+
+/* End of We Do Style Code */
+
+
+/* Start of Welcome Style Code */
+
+.welcome {
+    margin-bottom: 128px;
+}
+
+.welcome .btn {
+    position: relative;
+    top: 12px;
+}
+
+.section__text {
+    width: calc((100% / 12)*8);
+    margin-top: 32px;
+    margin-bottom: 56px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 64px;
+}
+
+.welcome .btn {
+    position: relative;
+    top: 12px;
+}
+
+.gallery__img {
+    transition: all 0.4s;
+}
+
+.gallery__img:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gallery__img:nth-child(2) {
+    margin-top: 48px;
+}
+
+.section__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sect__bottom-subtext {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: var(--text-transform);
+}
+
+.section__bottom h4 {
+    margin: 16px 0;
+}
+
+.sect__bottom-text {
+    width: calc((100% / 12)*6);
+    text-align: center;
+}
+
+.section__bottom .link {
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--body-color);
+}
+
+.section__bottom .link img {
+    margin-left: 6px;
+}
+
+/* End of Welcome Style Code */
+
+
+/* Start of Benefitsh Style Code */
+
+.benefitsh {
+    padding: 128px 0;
+    background: #F5F2F0;
+}
+
+.benefitsh .section__heading .h2 {
+    margin-top: 20px;
+}
+
+.benefitsh__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 64px;
+}
+
+.benefitsh__box {
+    width: calc(100% / 4);
+    display: block;
+    margin: 0 12px;
+    height: 384px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefitsh__box:first-of-type {
+    background: url(../img/benefitsh1.svg);
+    margin-left: 0;
+}
+
+.benefitsh__box:nth-child(2) {
+    background: url(../img/benefitsh2.svg);
+}
+
+.benefitsh__box:nth-child(3) {
+    background: url(../img/benefitsh3.svg);
+}
+
+.benefitsh__box:last-of-type {
+    background: url(../img/benefitsh4.svg);
+    margin-right: 0;
+}
+
+.benefitsh__f24 {
+    width: 100%;
+    padding: 0 32px;
+    transition: all 0.4s;
+    position: absolute;
+    top: 296px;
+}
+
+.benefitsh__box::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(184.38deg, #060606 16.68%, rgba(0, 0, 0, 0.02) 96.44%);
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    top: 197px;
+    transition: all 0.4s;
+}
+
+.benefitsh__f24 .h5 {
+    /* margin-top: 133px; */
+    margin-bottom: 32px;
+
+}
+
+.benefitsh__f24 p {
+    margin-top: 16px;
+}
+
+.benefitsh__box:hover .benefitsh__f24 {
+    top: 207px;
+}
+
+.benefitsh__box:hover .benefitsh__f24 h5 {
+    margin-bottom: 16px;
+}
+
+
+
+
+.benefitsh__box:hover::after {
+    top: 75px;
+}
+
+/* End of Benefitsh Style Code */
+
+
+
+/* Start of Upcoming Sermons Code */
+
+.up-sermons {
+    margin: 128px 0;
+}
+
+.up-sermons__carousel {
+    margin-top: 64px;
+}
+
+.up-sermons__item {
+    display: flex;
+    overflow: hidden;
+}
+
+.up-sermons__date {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.up-sermons__date .h5 {
+    align-self: flex-end;
+}
+
+.month {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #161722;
+    align-self: flex-start;
+}
+
+.up-sermons__left {
+    width: calc((100% / 12)*4);
+    background: var(--primary-light);
+    position: relative;
+}
+
+.up-sermons__info {
+    padding: 61px 90px;
+}
+
+.up-sermons__right {
+    width: calc((100% / 12)*8);
+}
+
+.up-sermons__img {
+    object-fit: cover;
+    object-position: left;
+    height: 100%;
+}
+
+.event {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #DC9853;
+}
+
+.title {
+    margin: 16px 0;
+}
+
+.up-sermons__description {
+    opacity: 0.78;
+}
+
+.time {
+    margin-top: 32px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.time img {
+    margin-right: 16px;
+    align-self: flex-start;
+}
+
+.location {
+    display: flex;
+    margin-top: 16px;
+}
+
+.location img {
+    margin-right: 16px;
+    align-self: flex-start;
+}
+
+.location~.btn {
+    display: inline-block;
+    margin-top: 32px;
+}
+
+
+/* End of Upcoming Sermons Code */
+
+
+
+/* Sttart of CTA Codes */
+
+.cta {
+    background: url(../img/cta_bg.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 128px 0;
+}
+
+
+.cta__container {
+    display: flex;
+    justify-content: center;
+}
+
+.cta__inner {
+    width: calc((100% / 12)*8);
+    background: white;
+    backdrop-filter: blur(40px);
+    padding: 72px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.cta__inner::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: var(--primary-bg);
+}
+
+.cta__content {
+    width: 368px;
+}
+
+.cta .p {
+    margin-top: 16px;
+}
+
+.cta .btn {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+/* End of CTA Code */
+
+
+/* Star of Blog Post Code */
+
+.blog-post {
+    margin: 128px 0;
+}
+
+.blog__cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards{
+    margin-top: 64px;
+}
+
+.blog-card{
+    width: calc((100% / 12)*3);
+    margin: 0 12px;
+    background: var(--primary-light);
+    padding: 48px 32px;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.blog-card::after{
+    content: "";
+    transition: all 1s;
+}
+
+.blog-card:hover::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 16px;
+    background: var(--primary-bg);
+}
+
+.blog-card:first-child{
+    margin-left: 0;
+}
+
+.blog-card:last-child{
+    margin-right: 0;
+}
+
+.blog-author{
+    margin-top: 48px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+/* End of Blog Post Code */
